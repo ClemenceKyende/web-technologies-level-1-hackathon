@@ -1,24 +1,62 @@
-<!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drug Abuse Support App Proposal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Drug Abuse Support App Proposal</h1>
+    </header>
 
+    <nav>
+        <ul>
+            <li><a href="https://google.com">About</a></li>
+            <li><a href="https://google.com">Resources</a></li>
+            <li><a href="https://google.com">Contact</a></li>
+        </ul>
+    </nav>
 
-<!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+    <main>
+        <section id="about">
+            <h2>About the App</h2>
+            <img src="Community Support.jpg" alt="This is community support">
+            <p>Our mobile app aims to provide support and resources for individuals struggling with drug abuse and addiction. Through a user-friendly interface, users will be able to access information, connect with support groups, and find local treatment centers.</p>
+            <p>The app will also offer educational materials, self-assessment tools, and personalized support plans to assist individuals in their recovery journey.</p>
+        </section>
 
+        <section id="resources">
+            <h2>Resources</h2>
+            <img src="Resource Library.jpg" alt="This is Resource Library">
+            <p>The app will include a comprehensive directory of resources including helplines, online support communities, articles, and educational materials about drug abuse and addiction.</p>
+            <p>Users will have access to information about rehabilitation centers, detox programs, counseling services, and support groups in their local area.</p>
+        </section>
 
-<!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+        <section id="contact"> 
+            <h2>Contact Us</h2>
+            <img src="Community Engagement.jpg" alt="This is Community Engagement">
+            <p>If you have any questions or feedback about the app, please feel free to contact us at <a href="mailto:support@drugabusesupportapp.com">support@drugabusesupportapp.com</a>.</p>
+            <p>We welcome partnerships with organizations and professionals in the field of addiction recovery to collaborate on improving and expanding our services.</p>
+        </section>
 
+        <section id="feedback">
+            <h2>Provide Feedback</h2>
+            <form action="submit_feedback.php" method="post">
+                <label for="name">Your Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Your Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
 
-<!-- 4. create another section add a form that takes in the following input:
-  a. name
-  b. email address
-  c. phone number
-  d. age
-  e. radio checkbox for gender (use fieldset to group the gender input)
-  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
-  g. password
-  h. a hidden field to capture sessionId
-  i. cancel button that clears form inputs
-  j. submit button with text register
-  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes
--->
-
-<!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+    <footer>
+        <p>&copy; 2024 Drug Abuse Support App</p>
+    </footer>
+</body>
+</html>
